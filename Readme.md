@@ -25,7 +25,7 @@ Windows requires the ugly addition of ```__declspec(dllexport)``` to each functi
 Linux working with command ```gcc -m64 -shared -o a.out test.c```.
 Linux working with command ```clang -shared -o a.out test.c```.
 
-Linux does not require the the use of ```__declspec(dllexport)``.
+Linux does not require the the use of ```__declspec(dllexport)```.
 
 ### OSX
 
