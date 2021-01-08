@@ -1,20 +1,19 @@
 #include <stdio.h>
 
 
-#define EXPORT __declspec(dllexport)
-EXPORT int one () {
+int one () {
   return 1;
 }
 
-EXPORT int two () {
+int two () {
 	return 2;
 }
 
-EXPORT int addOne (int i) {
+int addOne (int i) {
 	return i + 1;
 }
 
-EXPORT int addTwo (int i) {
+int addTwo (int i) {
 	return i + two ();
 }
 

@@ -10,22 +10,28 @@ end
 
 module Interop =
 
-  [<DllImport(@"C:\Users\Flippie\Documents\GIT\test\Interop\c_code\a.out", CallingConvention = CallingConvention.Cdecl)>]
+  [<DllImport(@"/mnt/c/Users/Flippie/Documents/GIT/test/Interop/c_linux/a.out", CallingConvention = CallingConvention.Cdecl)>]
+//  [<DllImport(@"C:\Users\Flippie\Documents\GIT\test\Interop\c_windows\a.out", CallingConvention = CallingConvention.Cdecl)>]
   extern int one()
   
-  [<DllImport(@"C:\Users\Flippie\Documents\GIT\test\Interop\c_code\a.out", CallingConvention = CallingConvention.Cdecl)>]
+  [<DllImport(@"/mnt/c/Users/Flippie/Documents/GIT/test/Interop/c_linux/a.out", CallingConvention = CallingConvention.Cdecl)>]
+//  [<DllImport(@"C:\Users\Flippie\Documents\GIT\test\Interop\c_windows\a.out", CallingConvention = CallingConvention.Cdecl)>]
   extern int addOne(int)  
   
-  [<DllImport(@"C:\Users\Flippie\Documents\GIT\test\Interop\c_code\a.out", CallingConvention = CallingConvention.Cdecl)>]
+  [<DllImport(@"/mnt/c/Users/Flippie/Documents/GIT/test/Interop/c_linux/a.out", CallingConvention = CallingConvention.Cdecl)>]
+//  [<DllImport(@"C:\Users\Flippie\Documents\GIT\test\Interop\c_windows\a.out", CallingConvention = CallingConvention.Cdecl)>]
   extern int addTwo(int)  
   
-  [<DllImport(@"C:\Users\Flippie\Documents\GIT\test\Interop\c_code\a.out", CallingConvention = CallingConvention.Cdecl)>]
+  [<DllImport(@"/mnt/c/Users/Flippie/Documents/GIT/test/Interop/c_linux/a.out", CallingConvention = CallingConvention.Cdecl)>]
+//  [<DllImport(@"C:\Users\Flippie\Documents\GIT\test\Interop\c_windows\a.out", CallingConvention = CallingConvention.Cdecl)>]
   extern void HelloWorld()
   
-  [<DllImport(@"C:\Users\Flippie\Documents\GIT\test\Interop\c_code\a.out", CallingConvention = CallingConvention.Cdecl)>]
+  [<DllImport(@"/mnt/c/Users/Flippie/Documents/GIT/test/Interop/c_linux/a.out", CallingConvention = CallingConvention.Cdecl)>]
+//  [<DllImport(@"C:\Users\Flippie\Documents\GIT\test\Interop\c_windows\a.out", CallingConvention = CallingConvention.Cdecl)>]
   extern Point makePoint (int  a, int  b) 
 
-  [<DllImport(@"C:\Users\Flippie\Documents\GIT\test\Interop\c_code\a.out", CallingConvention = CallingConvention.Cdecl)>]
+  [<DllImport(@"/mnt/c/Users/Flippie/Documents/GIT/test/Interop/c_linux/a.out", CallingConvention = CallingConvention.Cdecl)>]
+//  [<DllImport(@"C:\Users\Flippie\Documents\GIT\test\Interop\c_windows\a.out", CallingConvention = CallingConvention.Cdecl)>]
   extern int SumPoint (Point) 
 
 
@@ -42,7 +48,8 @@ let main _ =
   printf "point y co-ordinate %O\n" a.y
   Interop.SumPoint(a) |> printf "Sum of created point: %A\n" 
 
-
+  Interop.HelloWorld()
   let x = System.Console.ReadLine()
-  //Interop.HelloWorld()
+  
+  
   0
