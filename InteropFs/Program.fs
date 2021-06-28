@@ -8,22 +8,22 @@ end
 
 module Interop =
   
-  [<DllImport(@"a.out", CallingConvention = CallingConvention.Cdecl)>]
+  [<DllImport(@"/mnt/c/Users/Flippie/Documents/GIT/test/Interop/c_linux/a.out", CallingConvention = CallingConvention.Cdecl)>]
   extern int one()
   
-  [<DllImport(@"a.out", CallingConvention = CallingConvention.Cdecl)>]
+  [<DllImport(@"/mnt/c/Users/Flippie/Documents/GIT/test/Interop/c_linux/a.out", CallingConvention = CallingConvention.Cdecl)>]
   extern int addOne(int)  
   
-  [<DllImport(@"a.out", CallingConvention = CallingConvention.Cdecl)>]
+  [<DllImport(@"/mnt/c/Users/Flippie/Documents/GIT/test/Interop/c_linux/a.out", CallingConvention = CallingConvention.Cdecl)>]
   extern int addTwo(int)  
   
-  [<DllImport(@"a.out", CallingConvention = CallingConvention.Cdecl)>]
+  [<DllImport(@"/mnt/c/Users/Flippie/Documents/GIT/test/Interop/c_linux/a.out", CallingConvention = CallingConvention.Cdecl)>]
   extern void HelloWorld()
   
-  [<DllImport(@"a.out", CallingConvention = CallingConvention.Cdecl)>]
+  [<DllImport(@"/mnt/c/Users/Flippie/Documents/GIT/test/Interop/c_linux/a.out", CallingConvention = CallingConvention.Cdecl)>]
   extern Point makePoint (int  a, int  b) 
 
-  [<DllImport(@"a.out", CallingConvention = CallingConvention.Cdecl)>]
+  [<DllImport(@"/mnt/c/Users/Flippie/Documents/GIT/test/Interop/c_linux/a.out", CallingConvention = CallingConvention.Cdecl)>]
   extern int SumPoint (Point) 
 
 
